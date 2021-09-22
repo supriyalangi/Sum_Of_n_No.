@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Write a program that asks the user for a number n and prints the sum of the numbers 1 to n -->
+    <input type="number" id="num">
+    <button id="btn"> click</button><br>
+    <h1 id="ans"></h1>
+    <script>
+
+        function x() {
+            number = document.getElementById("num").value;
+            var sum = 0;
+
+            for (var i = 1; i <= number; i++) {
+                sum = sum + i;
+            }
+
+            document.getElementById('ans').innerHTML = sum;
+
+        }
+
+        btn.addEventListener('click', x);
+
+    </script>
+</body>
+
+</html>
